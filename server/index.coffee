@@ -2,8 +2,8 @@ path = require('path')
 app = require('express')()
 http = require('http').Server(app)
 io = require('socket.io')(http)
-game = require('game.js')
-location = require('location.js')
+game = require('./game.js')
+location = require('./location.js')
 
 server = {}
 server.players = []

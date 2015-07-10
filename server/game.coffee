@@ -1,4 +1,4 @@
-random = require("random")
+random = require("./random.js")
 
 class game
     constructor: (@location, @players) ->
