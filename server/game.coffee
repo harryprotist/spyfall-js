@@ -22,5 +22,6 @@ class game
         ) for role in @roles()
         out
 
+exports.
 new_game = (locations, players) ->
     new game(random.choice(locations), players)

@@ -1,5 +1,6 @@
 fs = require("fs")
 
+exports.
 parse_location_file = (filepath) ->
     location_list = []
     location_data = fs.readFileSync(filepath)
