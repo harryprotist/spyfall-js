@@ -15,7 +15,7 @@ class game
 
     messages: ->
         out = []
-        (if role
+        (if role.length > 0
             out.push("You have been given the role "+role+" at the location "+@location.name+".")
         else
             out.push("You are the spy!")
