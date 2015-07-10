@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Socket.io testing thingy</title>
+  <script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io();
+window.onload = function() {
+  var name = window.prompt("What is your name?", "Guest"); 
+  socket.emit("join", name);
+}
+</script>
+</head>
+<body>
+  <ul id="people"></ul>
+</body>
