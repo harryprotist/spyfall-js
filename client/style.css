@@ -1,10 +1,25 @@
 body {
   background: #efefef;
   text-align: center;
+  font-family: helvetica;
+  padding: 0px;
+}
+
+input {
+  border: 0px;
+  background: #cccccc;
+  box-shadow: 0px 0px 2px #888888;
 }
 
 h2 {
-  background: #dddddd;
+  background: #cccccc;
+  margin: 0px;
+  padding: 10px;
+  box-shadow: 0px 0px 2px #888888;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #game {
@@ -20,6 +35,10 @@ h2 {
   text-align: center;
   padding: 20px;
   margin: 10px;
+}
+
+#button_area {
+  text-align: center;
 }
 
 #role_area {
