@@ -1,7 +1,7 @@
 {
-  "name": "socketfall",
+  "name": "spyfall-js",
   "version": "0.0.1",
-  "description": "spyfall with socket.io",
+  "description": "spyfall with socket.io and custom files",
   "dependencies": {
     "express": "^4.10.2",
     "socket.io": "^1.3.5"
