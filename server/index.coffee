@@ -2,10 +2,14 @@ path = require('path')
 app = require('express')()
 http = require('http').Server(app)
 io = require('socket.io')(http)
+game = require('game.js')
+location = require('location.js')
 
 server = {}
 server.players = []
-server.locations = parse_location_file(path.join(__dirname, '..', 'locations.json'))
+server.locations = location.parse_location_file(
+  path.join(__dirname, '..', 'locations.json')
+)
 server.game = null
 server.clock = 0
 
@@ -28,7 +32,7 @@ io.on('connection', (socket) ->
     )
   )
   socket.on("start", (time) ->
-    server.game = new_game(server.locations, server.players.length)
+    server.game = game.new_game(server.locations, server.players.length)
     server.clock = time * 60
     server.interval = setInterval(() ->
       server.clock--
