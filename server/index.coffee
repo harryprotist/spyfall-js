@@ -3,8 +3,11 @@ app = require('express')()
 http = require('http').Server(app)
 io = require('socket.io')(http)
 
-server =
-  players: []
+server = {}
+server.players = []
+server.locations = parse_location_file(path.join(__dirname, '..', 'locations.json'))
+server.game = null
+server.clock = 0
 
 app.get('/', (q, r) ->
   r.sendFile(path.join(__dirname, '../client', 'index.html'))
@@ -23,6 +26,17 @@ io.on('connection', (socket) ->
       server.players.push(name)
       io.emit("join", [name])
     )
+  )
+  socket.on("start", (time) ->
+    server.game = new_game(server.locations, server.players.length)
+    server.clock = time * 60
+    server.interval = setInterval(() ->
+      server.clock--
+      if (server.clock < 0)
+        clearInterval(server.interval)
+        return
+      io.emit("time", server.clock)
+    , 1000)
   )
 )
 
