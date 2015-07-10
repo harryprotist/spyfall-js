@@ -1,6 +1,10 @@
 {
   "name": "spyfall-js",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harryprotist/spyfall-js.git"  
+  },
   "description": "spyfall with socket.io and custom files",
   "dependencies": {
     "express": "^4.10.2",
