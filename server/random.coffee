@@ -3,9 +3,10 @@ index = (ordered_list) ->
 
 exports.
 shuffle = (ordered_list) ->
+    still_ordered = ordered_list.slice()
     unordered_list = []
-    while ordered_list.length > 0
-        unordered_list += ordered_list.splice(index(ordered_list), 1)
+    while still_ordered.length > 0
+        unordered_list = unordered_list.concat(still_ordered.splice(index(still_ordered), 1))
     unordered_list
 
 exports.
