@@ -33,7 +33,9 @@ io.on('connection', (socket) ->
     if (names.length == 0 || names[0] == "")
       return
     names.forEach((name) ->
-      name = name.replace(/[^A-Za-z0-9]/, "")
+      name = name.replace(/[^A-Za-z0-9 ]/g, "")
+      while (server.players.hasOwnProperty(name))
+        name += " Copy"
       player_name = name
       console.log(name + " joined the room")
       server.players[name] = socket

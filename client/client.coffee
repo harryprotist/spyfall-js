@@ -8,33 +8,35 @@ socket.on("join", (names) ->
   names.forEach((name) ->
     console.log(name + " joined")
     li = document.createElement("LI")
-    li.innerHTML = name
+    li.textContent = name
     document.getElementById("people").appendChild(li)
   )
 )
 
 socket.on("time", (time) ->
-  document.getElementById("clock").innerHTML = time
+  document.getElementById("clock").textContent = time
 )
 
 socket.on("role", (role) ->
-  document.getElementById("role").innerHTML = role
+  document.getElementById("role").textContent = role
 )
 
 socket.on("leave", (names) ->
   names.forEach((name) ->
     for child in document.getElementById("people").children
-      if (child.innerHTML && child.innerHTML == name)
+      if (child.textContent && child.textContent == name)
         document.getElementById("people").removeChild(child)
   )
 )
 
 socket.on("location", (locations) ->
-  document.getElementById.innerHTML = ""
+  locs = document.getElementById("locations")
+  while (locs.firstChild)
+    locs.removeChild(locs.firstChild)
   locations.forEach((loc) ->
     li = document.createElement("LI")
-    li.innerHTML = loc.name
-    document.getElementById("locations").appendChild(li)
+    li.textContent = loc.name
+    locs.appendChild(li)
   )
 )
 
