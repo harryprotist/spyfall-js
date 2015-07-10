@@ -27,6 +27,7 @@ io.on('connection', (socket) ->
     console.log("user left")
     if (server.players[player_name])
       delete server.players[player_name]
+      io.emit("leave", [player_name])
   )
   socket.on("join", (names) ->
     if (names.length == 0 || names[0] == "")
@@ -82,6 +83,7 @@ io.on('connection', (socket) ->
     server.clock = 0
     io.emit("time", "00:00")
     io.emit("role", "Game has not started.")
+    io.emit("location", [])
     server.time_limit = 480
   )
 )
