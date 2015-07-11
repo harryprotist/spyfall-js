@@ -38,7 +38,8 @@ io.on('connection', (socket) ->
       player_name = name
       console.log(name + " joined the room")
       server.players[name] = socket
-      io.emit("join", [name])
+      socket.broadcast.emit("join", [name])
+      socket.emit("self_join", name)
       if (server.state == "PLAY")
         socket.emit("role", "Please wait for the next game to start.")
     )

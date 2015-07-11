@@ -4,6 +4,14 @@ window.onload = () ->
   name = window.prompt("What is your name?", "Guest")
   socket.emit("join", [name])
 
+socket.on("self_join", (name) ->
+  li = document.createElement("LI")
+  b = document.createElement("B")
+  b.textContent = name
+  li.appendChild(b)
+  document.getElementById("people").appendChild(li)
+)
+
 socket.on("join", (names) ->
   names.forEach((name) ->
     console.log(name + " joined")
