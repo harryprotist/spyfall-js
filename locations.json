@@ -1,17 +1,301 @@
 {
-	"Brotherhood Meetup": ["Evan", "Ben", "Tobin", "Emma", "Nicholas", "Ian", "Eric", "Petra", "Liam", "Kye"],
-	"Madeira": ["Kendall", "Henry", "Adam", "Eve", "Sirius", "Bernard", "Caldwell", "Scipio", "Koen"],
-	"Ravenna": ["Vadinci", "Saelondis", "Iori Mizuchi", "Don Gatarro", "Martin", "Nia", "Bizzello del Mare Ligusticum"],
-	"Future Gadget Lab (Steins;Gate)": ["Okabe Rintarou", "Makise Kurisu", "Mayuri Shiina", "Suzuha Amane", "Daru", "Moeka", "Mr. Braun", "Ruka", "Faris"],
-	"Fuyuki City (Fate/Zero)": ["Saber", "Lancer", "Archer", "Berserker", "Assassin", "Rider", "Caster", "Emiya Kiritsugu", "Kotomine Kirei", "Tohsaka Tokiomi", "Waver Velvet", "Kariya Matou", "Ryunosuke", "Kayneth El-Melloi Archibald"],
-	"Flying Pussyfoot (Baccano)": ["Czeslaw Meyer", "Jacuzzi Splot", "Nice Holystone", "Chane Laforet", "Ladd Russo", "Lua Klein", "Claire Stanfield"],
-	"Mitakihara Town (Madoka Magicka)": ["Madoka Kaname", "Homura Akemi", "Sayaka Miki", "Mami Tomoe", "Kyoko Sakura", "Kyubey"],
-	"Afterlife (Angel Beats)": ["Hideki Hinata", "Yui", "Kanade Tachibana", "Masami Iwasawa", "Takamatsu", "Shiina", "Noda", "Matsushita", "Takeyama", "TK", "Yuri Nakamura", "Yuzuru Otonashi"],
-	"Tokyo (Darker than Black)": ["Hei", "Yin", "Mao", "November 11", "April", "July", "Amber"],
-	"Amestris (Fullmetal Alchemist)": ["Alphonse Elric", "Edward Elric", "Van Hohenheim", "Winry Rockbell", "Roy Mustang", "Riza Hawkeye", "Olivier Mira Armstrong", "King Bradley", "Alex Louis Armstrong", "Father", "Envy", "Gluttony", "Greed", "Lust", "Pride", "Sloth", "Wrath"],
-	"Fire Nation (Avatar the Last Airbender)": ["Aang", "Appa", "Katara", "Sokka", "Toph", "Zuko", "Suki", "Ty Lee", "Mai", "Azula", "Cabbage Merchant", "Firelord Ozai"],
-	"The Room": ["Johnny", "Lisa", "Mark", "Denny", "Claudette", "Flower Shop Lady"],
-	"Trapped in the Closet": ["Big Man", "Bridget", "Gwendolyn", "James", "Pimp Luscious", "Twan", "Tina", "Sylvester", "Rufus", "Roxanne"],
-	"House of Abrasax (Jupiter Ascending)": ["Jupiter Jones", "Cain Wise (Channing Tatum)", "Stinger Apini", "Balem Abrasax", "Titus Abrasax", "Kalique Abrasax"],
-	"Keira Investigation (Death Note)": ["Light Yagami", "L", "Ryuk", "Misa Amane", "Soichiro Yagami", "Touta Matsuda", "Watari", "Shuichi Aizawa", "Kanzo Mogi", "Hideki Ide"]
+
+    "Brotherhood Meetup": ["Evan", "Ben", "Tobin", "Emma", "Nicholas", "Ian", "Eric", "Petra", "Liam", "Kye"],
+
+    "Madeira": ["Kendall", "Henry", "Adam", "Eve", "Sirius", "Bernard", "Caldwell", "Scipio", "Koen"],
+
+    "Ravenna": ["Vadinci", "Saelondis", "Iori Mizuchi (Nicholas)", "Don Gatarro", "Martin", "Nia", "Bizzello del Mare Ligusticum (Ian)"],
+
+    "Future Gadget Lab (Steins;Gate)": ["Okabe Rintarou", "Makise Kurisu", "Mayuri Shiina", "Suzuha Amane", "Daru", "Moeka Kiryu", "Mr. Braun", "Ruka", "Faris Nyannyan"],
+
+    "Fuyuki City (Fate/Zero)": ["Saber", "Lancer", "Archer", "Berserker", "Assassin", "Rider", "Caster", "Emiya Kiritsugu", "Kotomine Kirei", "Tohsaka Tokiomi", "Waver Velvet", "Kariya Matou", "Ryunosuke", "Kayneth El-Melloi Archibald"],
+
+    "The Room": ["Johnny", "Lisa", "Mark", "Denny", "Claudette", "flower shop lady"],
+
+    "Soviet Russia": ["peasant", "bureaucrat", "Stalin", "Lenin", "red army guard", "factory worker", "scientist", "farmer"],
+
+    "DnD Party": ["paladin", "wizard", "rogue", "cleric", "barbarian", "ranger", "sorcerer", "ninja"],
+
+
+  "airplane":
+   [
+    "first class passenger",
+    "air marshall",
+    "mechanic",
+    "air hostess",
+    "copilot",
+    "captain",
+    "economy class passenger"
+  ],
+  "bank":
+   [
+    "armored car driver",
+    "manager",
+    "consultant",
+    "robber",
+    "security guard",
+    "teller",
+    "customer"
+  ],
+  "beach":
+   [
+    "beach waitress",
+    "kite surfer",
+    "lifeguard",
+    "thief",
+    "beach photographer",
+    "ice cream truck driver",
+    "beach goer"
+  ],
+  "cathedral":
+   [
+    "priest",
+    "beggar",
+    "sinner",
+    "tourist",
+    "sponsor",
+    "chorister",
+    "parishioner"
+  ],
+  "circus tent":
+   [
+    "acrobat",
+    "animal trainer",
+    "magician",
+    "fire eater",
+    "clown",
+    "juggler",
+    "visitor"
+  ],
+  "corporate party":
+   [
+    "entertainer",
+    "manager",
+    "unwanted guest",
+    "owner",
+    "secretary",
+    "delivery boy",
+    "accountant"
+  ],
+  "crusader army":
+   [
+    "monk",
+    "imprisoned saracen",
+    "servant",
+    "bishop",
+    "squire",
+    "archer",
+    "knight"
+  ],
+  "casino":
+   [
+    "bartender",
+    "head security guard",
+    "bouncer",
+    "manager",
+    "hustler",
+    "dealer",
+    "gambler"
+  ],
+  "day spa":
+   [
+    "stylist",
+    "masseuse",
+    "manicurist",
+    "makeup artist",
+    "dermatologist",
+    "beautician",
+    "customer"
+  ],
+  "embassy":
+   [
+    "security guard",
+    "secretary",
+    "ambassador",
+    "tourist",
+    "refugee",
+    "diplomat",
+    "government official"
+  ],
+  "hospital":
+   [
+    "nurse",
+    "doctor",
+    "anesthesiologist",
+    "intern",
+    "therapist",
+    "surgeon",
+    "patient"
+  ],
+  "hotel":
+   [
+    "doorman",
+    "security guard",
+    "manager",
+    "housekeeper",
+    "bartender",
+    "bellman",
+    "customer"
+  ],
+  "military base":
+   [
+    "deserter",
+    "colonel",
+    "medic",
+    "sniper",
+    "officer",
+    "tank engineer",
+    "soldier"
+  ],
+  "movie studio":
+   [
+    "stunt man",
+    "sound engineer",
+    "camera man",
+    "director",
+    "costume artist",
+    "producer",
+    "actor"
+  ],
+  "ocean liner":
+   [
+    "cook",
+    "captain",
+    "bartender",
+    "musician",
+    "waiter",
+    "mechanic",
+    "rich passenger"
+  ],
+  "passenger train":
+   [
+    "mechanic",
+    "border patrol",
+    "train attendant",
+    "restaurant chef",
+    "train driver",
+    "stoker",
+    "passenger"
+  ],
+  "pirate ship":
+   [
+    "cook",
+    "slave",
+    "cannoneer",
+    "tied up prisoner",
+    "cabin boy",
+    "brave captain",
+    "sailor"
+  ],
+  "polar station":
+   [
+    "medic",
+    "expedition leader",
+    "biologist",
+    "radioman",
+    "hydrologist",
+    "meteorologist",
+    "geologist"
+  ],
+  "police station":
+   [
+    "detective",
+    "lawyer",
+    "journalist",
+    "criminalist",
+    "archivist",
+    "criminal",
+    "patrol officer"
+  ],
+  "restaurant":
+   [
+    "musician",
+    "bouncer",
+    "hostess",
+    "head chef",
+    "food critic",
+    "waiter",
+    "customer"
+  ],
+  "school":
+   [
+    "gym teacher",
+    "principal",
+    "security guard",
+    "janitor",
+    "cafeteria lady",
+    "maintenance man",
+    "student"
+  ],
+  "service station":
+   [
+    "manager",
+    "tire specialist",
+    "biker",
+    "car owner",
+    "car wash operator",
+    "electrician",
+    "auto mechanic"
+  ],
+  "space station":
+   [
+    "engineer",
+    "alien",
+    "pilot",
+    "commander",
+    "scientist",
+    "doctor",
+    "space tourist"
+  ],
+  "submarine":
+   [
+    "cook",
+    "commander",
+    "sonar technician",
+    "electronics technician",
+    "radioman",
+    "navigator",
+    "sailor"
+  ],
+  "supermarket":
+   [
+    "cashier",
+    "butcher",
+    "janitor",
+    "security guard",
+    "food sample demonstrator",
+    "shelf stocker",
+    "customer"
+  ],
+  "theater":
+   [
+    "coat check lady",
+    "prompter",
+    "cashier",
+    "director",
+    "actor",
+    "crew man",
+    "audience member"
+  ],
+  "university":
+   [
+    "graduate student",
+    "professor",
+    "dean",
+    "psychologist",
+    "maintenance man",
+    "janitor",
+    "student"
+  ],
+  "world war ii squad":
+   [
+    "resistance fighter",
+    "radioman",
+    "scout",
+    "medic",
+    "cook",
+    "imprisoned nazi",
+    "soldier"
+  ]
+
 }
