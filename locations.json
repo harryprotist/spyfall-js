@@ -1,6 +1,6 @@
 {
 
-    "Brotherhood Meetup": ["Evan", "Ben", "Tobin", "Emma", "Nicholas", "Ian", "Eric", "Petra", "Liam", "Kye"],
+    "Brotherhood meetup": ["Evan", "Ben", "Tobin", "Emma", "Nicholas", "Ian", "Eric", "Petra", "Liam", "Kye"],
 
     "Madeira": ["Kendall", "Henry", "Adam", "Eve", "Sirius", "Bernard", "Caldwell", "Scipio", "Koen"],
 
@@ -14,7 +14,9 @@
 
     "Soviet Russia": ["peasant", "bureaucrat", "Stalin", "Lenin", "red army guard", "factory worker", "scientist", "farmer"],
 
-    "DnD Party": ["paladin", "wizard", "rogue", "cleric", "barbarian", "ranger", "sorcerer", "ninja"],
+    "adventuring party": ["paladin", "wizard", "rogue", "cleric", "barbarian", "ranger", "sorcerer", "ninja"],
+
+    "Hogwarts": ["Ron", "Harry", "Hermione", "Hagrid", "Dumbledore", "Voldemort", "Snape", "Dobby", "Luna", "Neville", "Draco", "Fred", "George", "McGonagall", "Gilderoy Lockhart"],
 
 
   "airplane":
